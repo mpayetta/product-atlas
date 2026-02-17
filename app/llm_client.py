@@ -34,3 +34,18 @@ def ask_system(user_message, system_prompt):
         {"role": "user", "content": user_message},
     ]
     return chat(msgs)
+
+def chat_with_history(history, user_message, system_prompt=None, temperature=None):
+    """
+    history: list of {"role": "user"|"assistant", "content": str}
+    user_message: latest user message (str)
+    system_prompt: optional system-level instruction (str)
+    """
+    messages = []
+    if system_prompt:
+        messages.append({"role": "system", "content": system_prompt})
+
+    messages.extend(history)
+    messages.append({"role": "user", "content": user_message})
+
+    return chat(messages, temperature=temperature)
