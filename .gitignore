@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+
+# Local data
+data/chroma/
+data/raw/
+
+# Config with personal settings
+config/settings.env
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
