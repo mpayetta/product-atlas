@@ -1,4 +1,3 @@
-```markdown
 # Product Atlas – Local PM Copilot
 
 Product Atlas is a **local-first RAG assistant** for Product Managers.  
