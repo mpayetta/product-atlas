@@ -11,7 +11,7 @@ if PROJECT_ROOT not in sys.path:
 
 # Now imports from app will work
 import app  # noqa: E402
-from app.vector_store import PERSIST_DIR_ABS  # noqa: E402
+from app.core.vector_store import PERSIST_DIR_ABS  # noqa: E402
 
 def get_env(name, default=None):
     value = os.getenv(name, default)

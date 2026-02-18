@@ -1,17 +1,9 @@
 import os
-import sys
-
-# Ensure project root is on sys.path
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(CURRENT_DIR)
-if PROJECT_ROOT not in sys.path:
-    sys.path.insert(0, PROJECT_ROOT)
 
 import streamlit as st
-import app  # loads config/settings.env via app.__init__
-from app.rag import conversational_rag_answer
-from app.db import init_schema
-from app.conversations_sqlite import (
+from app.core.rag import conversational_rag_answer
+from app.core.db import init_schema
+from app.core.conversations_sqlite import (
     list_projects,
     create_project,
     list_conversations,

@@ -2,7 +2,7 @@ import uuid
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 
-from app.db import get_connection, init_schema
+from app.core.db import get_connection, init_schema
 
 
 def _now_iso() -> str:

@@ -1,8 +1,8 @@
 import os
 
-from app.vector_store import get_collection, query as vs_query
-from app.llm_client import ask_system
-from app.llm_client import chat_with_history
+from app.core.vector_store import get_collection, query as vs_query
+from app.core.llm_client import ask_system
+from app.core.llm_client import chat_with_history
 
 CONVERSATION_SYSTEM_PROMPT = """
 You are a senior Product Management copilot.

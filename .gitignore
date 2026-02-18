@@ -11,6 +11,7 @@ __pycache__/
 data/chroma/
 data/raw/
 data/product_atlas.db
+data/.product_atlas_ingested.json
 
 # Config with personal settings
 config/settings.env
@@ -22,3 +23,4 @@ config/settings.env
 *.swp
 
 other/
+scrapers/
